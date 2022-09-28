@@ -1,0 +1,166 @@
+$color-bg : #F7F9F9;
+$color-text: #424949;
+.app{
+    display: flex;
+    justify-content: center ;
+     
+    
+    .container{
+        width: 1024px;
+
+        .link{
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+
+        //LOGIN Y REGISTRO
+        .auth{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #FDFEFE;
+        }
+        h1{
+            font-size: 30px;
+            color: #222222;
+            margin-bottom: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            background: #9b9b9b21;
+            width: 250px;
+            gap: 20px;
+
+            input{
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid gray;
+                border-radius: 4px;
+            }
+            button{
+                padding: 10px;
+                border: none;
+                background-color: #222222;
+                border-radius: 5px;
+                color: $color-bg;
+                cursor: pointer;
+            }
+            p{
+                font-size: 15px;
+                color: crimson;
+                text-align: center;
+            }
+            span{
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+
+        //NAVBAR
+        
+        .navbar{
+            .container{
+                padding: 10px 0px;
+                display: flex;
+                justify-content: space-between;
+                .logo{
+                    font-size: 2rem;
+                    font-weight: 700;
+                    
+                }
+                .links{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+
+                    span{
+                        cursor: pointer;
+                    }
+                    .write{
+                        background-color: #424949;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        color: #F7F9F9;
+                        padding: 5px;
+                    }
+                    box-icon{
+                        fill: #ECF0F1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        //FOOTER
+        footer{
+            width: 100%;
+            background: #222222;
+            .logo{
+                font-size: 2rem;
+                font-weight: 700; 
+                color: #ECF0F1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .grupo1{
+                width: 100%;
+                max-width: 1200px;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 50px;
+                padding: 45px 0px;
+            }
+            .box1{
+                display: flex;
+                justify-content: center;
+            }
+            h2{
+                color: var(--bgColor);
+                margin-bottom: 25px;
+                font-size: 20px;
+                text-align: center;
+                color: #ECF0F1;
+            }
+            p {
+                color: #efefef;
+                margin-bottom: 10px;
+            }
+            a{
+                text-decoration: none;
+                color:  var(--colorPrincipal);
+                transition: 0.5s;
+                border-bottom: 1px solid transparent; 
+            }
+            .grupo2{
+                background: #424949;
+                padding: 10px 10px;
+                text-align: center;
+                color: #efefef;
+            }
+            .icon-redes_{
+                display: flex;
+                justify-content: center;
+            }
+            box-icon {
+                width: 35px;
+                height: 35px;
+                fill: #fff;
+            }
+
+        }
+    }
+}
