@@ -1,5 +1,5 @@
 import {createBrowserRouter, RouterProvider, Route, Outlet } from 'react-router-dom';
-import {Home} from './pages/Home';
+import {Home} from './pages/Home.jsx';
 import {Register} from './pages/Register';
 import {Login }from './pages/Login';
 import {Single} from './pages/Single';
@@ -12,7 +12,7 @@ import "./style.scss"
 const Layout = () =>{
   return(
     <>
-    <Navbar/>
+      <Navbar/>
       <Outlet/>
       <Footer />
     </>
